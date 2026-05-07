@@ -33,7 +33,8 @@ export default function MaterialsPage() {
 
         const data = await getTopicMaterials(id, selectedType);
 
-        setMaterials(data.results || []);
+        // setMaterials(data.results || []);
+        setMaterials(Array.isArray(data) ? data : data.results || []);
       } catch (err) {
         setError(
           err.response?.data?.detail ||
