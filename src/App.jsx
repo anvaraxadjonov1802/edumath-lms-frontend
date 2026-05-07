@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './routes/ProtectedRoute';
 import DashboardLayout from './components/layout/DashboardLayout';
@@ -27,6 +28,7 @@ function App() {
   return (
     <Router>
       <AuthProvider>
+        <SpeedInsights />
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<LandingPage />} />
