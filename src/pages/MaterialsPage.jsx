@@ -106,8 +106,7 @@ export default function MaterialsPage() {
           </h3>
 
           <p className="mx-auto mt-2 max-w-xl text-slate-600">
-            Bu bo‘limga hali fayl qo‘shilmagan. Admin panel orqali shu mavzuga
-            mos PDF, prezentatsiya yoki amaliy topshiriq yuklang.
+            Bu bo‘limga hali fayl qo‘shilmagan.
           </p>
         </div>
       )}
