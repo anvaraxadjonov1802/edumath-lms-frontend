@@ -134,9 +134,9 @@ export default function MaterialsPage() {
               )}
 
               <div className="mt-5">
-                {material.file_url ? (
+                {material.file_url || material.external_url ? (
                   <a
-                    href={material.file_url}
+                    href={material.file_url || material.external_url}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
